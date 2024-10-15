@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Üdvözlünk!</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0; /* Szürke háttér */
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            font-size: 2em;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="welcomeMessage">Üdvözlünk!</h1>
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const username = params.get('username');
+        if (username) {
+            document.getElementById('welcomeMessage').textContent = `Üdvözlünk, ${username}!`;
+        }
+    </script>
+</body>
+</html>

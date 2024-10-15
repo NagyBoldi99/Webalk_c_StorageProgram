@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bejelentkezés</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Bejelentkezés</h1>
+    </header>
+
+    <section>
+        <form id="loginForm">
+            <label for="username">Felhasználónév:</label>
+            <input type="text" id="username" name="username" required>
+            <span id="usernameError"></span><br>
+
+            <label for="password">Jelszó:</label>
+            <input type="password" id="password" name="password" required>
+            <span id="passwordError"></span><br>
+
+            <button type="submit">Bejelentkezés</button>
+        </form>
+
+        <p><a href="register.html">Regisztráció</a> | <a href="forgot-password.html">Elfelejtett jelszó</a></p>
+    </section>
+
+    <section>
+        <p><a href="index.html" class="fade-in">Vissza a főoldalra</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Raktár Kiadó/Áruló</p>
+    </footer>
+</body>
+</html>

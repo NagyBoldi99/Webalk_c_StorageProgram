@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raktár Kiadó/Áruló</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Főoldal -->
+    <header>
+        <h1>Üdvözöljük a Raktár Kiadó/Áruló Alkalmazásban</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Főoldal</a></li>
+                <li><a href="#login">Bejelentkezés</a></li>
+                <li><a href="#contact">Kapcsolat</a></li>
+                <li><a href="#events">Események</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Bemutatkozás</h2>
+        <p>Üdvözlünk a raktárbérlés és -értékesítés legjobb platformján! Böngéssz raktáraink között, és találj rá a neked legmegfelelőbb lehetőségekre.</p>
+    </section>
+
+    <!-- Bejelentkezés/Regisztráció -->
+    <section id="login">
+        <h2>Bejelentkezés</h2>
+        <form action="/login" method="post">
+            <label for="username">Felhasználónév:</label>
+            <input type="text" id="username" name="username" required>
+            
+            <label for="password">Jelszó:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Bejelentkezés</button>
+            <p><a href="#forgot-password">Elfelejtett jelszó?</a></p>
+        </form>
+
+        <h3>Regisztráció</h3>
+        <form action="/register" method="post">
+            <label for="new-username">Felhasználónév:</label>
+            <input type="text" id="new-username" name="new-username" required>
+            
+            <label for="new-password">Jelszó:</label>
+            <input type="password" id="new-password" name="new-password" required>
+
+            <button type="submit">Regisztráció</button>
+        </form>
+    </section>
+
+    <!-- Elfelejtett jelszó -->
+    <section id="forgot-password">
+        <h2>Elfelejtett jelszó</h2>
+        <form action="/forgot-password" method="post">
+            <label for="email">Email cím:</label>
+            <input type="email" id="email" name="email" required>
+
+            <button type="submit">Új jelszó kérése</button>
+        </form>
+    </section>
+
+    <!-- Események -->
+    <section id="events">
+        <h2>Események</h2>
+        <ul>
+            <li>Licit esemény</li>
+            <li>Kiárusítás</li>
+            <li>Bolhapiac</li>
+        </ul>
+    </section>
+
+    <!-- Kapcsolat menü -->
+    <section id="contact">
+        <h2>Kapcsolat</h2>
+        <p>Ügyintézés elérhetőségei:</p>
+        <p>Email: ugyfelszolgalat@raktar.hu</p>
+        <p>Telefon: +36 1 234 5678</p>
+    </section>
+
+    <!-- Bejelentkezés utáni menük -->
+    <section id="dashboard">
+        <h2>Saját Raktárkezelés</h2>
+        <nav>
+            <ul>
+                <li><a href="#my-warehouses">Saját raktáraim</a></li>
+                <li><a href="#profile">Saját profil</a></li>
+                <li><a href="#browse">Raktár Böngészés</a></li>
+            </ul>
+        </nav>
+    </section>
+
+    <!-- Saját profil -->
+    <section id="profile">
+        <h2>Profil</h2>
+        <p>Név: [Felhasználó neve]</p>
+        <a href="#change-password">Jelszó változtatás</a>
+    </section>
+
+    <!-- Raktár Böngészés és Szűrő -->
+    <section id="browse">
+        <h2>Raktár Böngészés</h2>
+        <label for="filter">Szűrő:</label>
+        <input type="text" id="filter" placeholder="Raktár keresése...">
+        
+        <h3>Talált raktárak</h3>
+        <ul>
+            <li>Raktár 1: Terület - 500 m², Ár - 300 000 Ft/hó, Cím: Budapest, 1. kerület</li>
+            <li>Raktár 2: Terület - 1200 m², Ár - 600 000 Ft/hó, Cím: Győr, Raktár u. 12.</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Raktár Kiadó/Áruló</p>
+    </footer>
+</body>
+</html>

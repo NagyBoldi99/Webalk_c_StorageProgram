@@ -1,0 +1,81 @@
+<!DOCTYPE html> 
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regisztráció</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="register.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Regisztráció</h1>
+    </header>
+
+    <section>
+        <form id="registerForm"> 
+            <!-- Név -->
+            <label for="name">Név:</label>
+            <input type="text" id="name" name="name" required><br>
+
+            <!-- E-mail cím -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <!-- Születési hely -->
+            <label for="birthplace">Születési hely:</label>
+            <input type="text" id="birthplace" name="birthplace" required><br>
+
+            <!-- Születési idő (dátumválasztó) -->
+            <label for="birthdate">Születési idő:</label>
+            <input type="date" id="birthdate" name="birthdate" required><br>
+
+            <!-- Nem (checkbox) -->
+            <label>Neme:</label><br>
+            <input type="checkbox" id="male" name="gender" value="Férfi">
+            <label for="male">Férfi</label><br>
+            <input type="checkbox" id="female" name="gender" value="Nő">
+            <label for="female">Nő</label><br>
+            <input type="checkbox" id="other" name="gender" value="Egyéb">
+            <label for="other">Egyéb</label><br>
+
+            <!-- Téma (színválasztó) -->
+            <label for="color">Téma szín:</label>
+            <input type="color" id="color" name="color" value="#ff0000"><br>
+
+            <!-- Kedvenc téma (radio button) -->
+            <label>Kedvenc téma:</label><br>
+            <input type="radio" id="storage" name="topic" value="Raktározás">
+            <label for="storage">Raktározás</label><br>
+            <input type="radio" id="sales" name="topic" value="Eladás">
+            <label for="sales">Eladás</label><br>
+            <input type="radio" id="both" name="topic" value="Mindkettő">
+            <label for="both">Mindkettő</label><br>
+
+            <!-- Új jelszó -->
+            <label for="regPassword">Új jelszó:</label>
+            <input type="password" id="regPassword" name="regPassword" required><br>
+
+            <!-- Új jelszó újra -->
+            <label for="confirmPassword">Új jelszó újra:</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" required><br>
+
+            <!-- Hibaüzenet mezők -->
+            <p id="passwordError" style="color: red;"></p>
+            <p id="confirmPasswordError" style="color: red;"></p>
+
+            <!-- Küldés gomb -->
+            <button type="submit">Regisztráció</button>
+        </form>
+    </section>
+
+    <!-- Főoldalra visszavezető link animációval -->
+    <section>
+        <p><a href="index.html" class="fade-in">Vissza a főoldalra</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Raktár Kiadó/Áruló</p>
+    </footer>
+</body>
+</html>

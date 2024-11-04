@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+      <TargetFramework>net6.0</TargetFramework>
+    </PropertyGroup>
+  
+    <ItemGroup>
+      <Content Include="**/*.html" CopyToOutputDirectory="PreserveNewest" />
+      <Content Include="**/*.css" CopyToOutputDirectory="PreserveNewest" />
+      <Content Include="**/*.js" CopyToOutputDirectory="PreserveNewest" />
+    </ItemGroup>
+  
+  </Project>
+  
